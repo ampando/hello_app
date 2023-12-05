@@ -25,5 +25,5 @@ test:
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  database: <%= ENV['DATABASE_URL'].sub(/^.*\/(.[^?]+).*/, '\1') %>
+  database: <%= ENV['DATABASE_URL'].to_s.sub(/^.*\/(.[^?]+).*/, '\1') %>
 
