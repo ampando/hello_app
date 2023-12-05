@@ -28,8 +28,10 @@ group :test do
 end
 
 group :production do
-  gem "pg", "1.3.5"
+  
 end
+
+gem "pg", "1.3.5", group: :production
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem.
 # Uncomment the following line if you're running Rails
